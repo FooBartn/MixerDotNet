@@ -1,0 +1,26 @@
+[
+  {
+    "slug": "alpha-user",
+    "name": "Alpha",
+    "description": "Be a part of Beam’s Alpha testing phase.",
+    "sparks": 0
+  },
+  {
+    "slug": "beam-me-up",
+    "name": "BeamMeUp",
+    "description": "Thanks for signing up for Beam!",
+    "sparks": 0
+  },
+  {
+    "slug": "beta-user",
+    "name": "Beta",
+    "description": "Be a part of Beam’s Beta user group.",
+    "sparks": 0
+  },
+  {
+    "slug": "followers-gold",
+    "name": "Followers Gold",
+    "description": "Have at least one thousands followers.",
+    "sparks": 0
+  }
+]

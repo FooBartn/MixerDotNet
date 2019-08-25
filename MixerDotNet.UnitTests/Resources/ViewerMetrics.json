@@ -1,0 +1,26 @@
+[
+  {
+    "time": "2018-11-04T16:27:35.000Z",
+    "browser": "Edge",
+    "channel": 2802009,
+    "costreamDepth": 0,
+    "country": "FR",
+    "platform": "Xbox"
+  },
+  {
+    "time": "2018-11-04T15:57:45.000Z",
+    "browser": "Firefox",
+    "channel": 2802009,
+    "costreamDepth": 0,
+    "country": "US",
+    "platform": "Other"
+  },
+  {
+    "time": "2018-11-04T16:31:06.000Z",
+    "browser": "MobileViewApp",
+    "channel": 2802009,
+    "costreamDepth": 0,
+    "country": "UY",
+    "platform": "Other"
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "roles": [
+    "User"
+  ],
+  "authkey": "AGo9U7nEmbB3CKEx",
+  "permissions": [
+    "chat",
+    "connect"
+  ],
+  "endpoints": [
+    "wss://chat.mixer.com:443"
+  ],
+  "isLoadShed": false
+}

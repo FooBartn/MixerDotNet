@@ -1,0 +1,183 @@
+﻿using MixerDotNet.Enums;
+
+namespace MixerDotNet.Interfaces.Channels
+{
+    /// <summary>
+    /// Channel preferences are a list of options and attributes which control behaviour for the channel. 
+    /// Please see each property for more details.
+    /// </summary>
+    public interface IChannelPreferences
+    {
+        /// <summary>
+        /// Allows other streamers to join you in a costream.
+        /// ** Note: Should be a boolean according to API. It is not.
+        /// </summary>
+        CoStreamPreference CostreamAllow { get; set; }
+
+        /// <summary>
+        /// Not documented on the API
+        /// </summary>
+        bool? MixerFeaturedAllow { get; set; }
+
+        /// <summary>
+        /// Indicates if the channel allows other channels to host it.
+        /// </summary>
+        bool HostingAllow { get; set; }
+
+        /// <summary>
+        /// Indicates if the channel allows HypeZone to host it.
+        /// </summary>
+        bool HypezoneAllow { get; set; }
+
+        /// <summary>
+        /// Not documented on the API
+        /// </summary>
+        bool? HostingAllowlive { get; set; }
+
+        /// <summary>
+        /// When a user visits the channel while the channel is offline, 
+        /// the most recent VOD will be automatically played if this preference is enabled.
+        /// </summary>
+        bool? ChannelOfflineAutoplayVod { get; set; }
+
+        /// <summary>
+        /// Not documented on the API
+        /// </summary>
+        string[] ChannelBannedwords { get; set; }
+
+        /// <summary>
+        /// Not documented on the API
+        /// </summary>
+        uint ChannelCatbotLevel { get; set; }
+
+        /// <summary>
+        /// Not documented on the API
+        /// </summary>
+        bool ChannelDirectPurchaseEnabled { get; set; }
+
+        /// <summary>
+        /// The message to be sent when a user completes a direct purchase on the channel. 
+        /// The template parameter %USER% will be replaced with the name of the user who completed direct purchase. 
+        /// The template parameter %CHANNEL% will be replaced with the name of the channel. 
+        /// The template parameter %GAMETITLE% will be replaced with the name of the game purchased.
+        /// </summary>
+        string ChannelNotifyDirectPurchaseMessage { get; set; }
+
+        /// <summary>
+        ///  Not documented on the API
+        /// </summary>
+        string ChannelNotifyDonatemessage { get; set; }
+
+        /// <summary>
+        /// Not documented on the API
+        /// </summary>
+        bool ChannelDonationsEnabled { get; set; }
+
+        /// <summary>
+        /// The message to be sent when a user follows the channel. 
+        /// The template parameter "%USER%" will be replaced with the follower's name.
+        /// </summary>
+        string ChannelNotifyFollowmessage { get; set; }
+
+        /// <summary>
+        /// The message to be sent when a user hosts the channel. 
+        /// The template parameter "%USER%" will be replaced with the hoster's name.
+        /// </summary>
+        string ChannelNotifyHostedBy { get; set; }
+
+        /// <summary>
+        /// The message to be sent when the channel hosts another. 
+        /// The template parameter "%USER%" will be replaced with the hostee's name.
+        /// </summary>
+        string ChannelNotifyHosting { get; set; }
+
+        /// <summary>
+        /// Specifies whether links are allowed in the chat.
+        /// </summary>
+        bool? ChannelLinksAllowed { get; set; }
+
+        /// <summary>
+        /// Specifies whether links are clickable in the chat.
+        /// </summary>
+        bool? ChannelLinksClickable { get; set; }
+
+        /// <summary>
+        /// Indicates whether to mute when the streamer opens his own stream.
+        /// </summary>
+        bool? ChannelPlayerMuteOwn { get; set; }
+
+        /// <summary>
+        /// Not documented on the API
+        /// </summary>
+        bool ChannelNotifyDirectPurchase { get; set; }
+
+        /// <summary>
+        /// Not documented on the API
+        /// </summary>
+        bool ChannelNotifyDonate { get; set; }
+
+        /// <summary>
+        /// Indicates whether a notification should be shown upon follow.
+        /// </summary>
+        bool? ChannelNotifyFollow { get; set; }
+
+        /// <summary>
+        /// Indicates whether a notification should be shown upon subscription.
+        /// </summary>
+        bool? ChannelNotifySubscribe { get; set; }
+
+        /// <summary>
+        /// Not documented on the API
+        /// </summary>
+        bool ChannelNotifySubscriptionGift { get; set; }
+
+        /// <summary>
+        /// Not documented on the API
+        /// </summary>
+        string ChannelNotifySubscriptionGiftMessage { get; set; }
+
+        /// <summary>
+        /// The text used when sharing the stream. 
+        /// The template parameter %URL% will be replaced with the channel's URL. 
+        /// The template parameter %USER% will be replaced with the channel's name.
+        /// </summary>
+        string Sharetext { get; set; }
+
+        /// <summary>
+        /// Interval required between each chat message.
+        /// </summary>
+        int? ChannelSlowchat { get; set; }
+
+        /// <summary>
+        /// The text to be added to the subscription email.
+        /// </summary>
+        string ChannelPartnerSubmail { get; set; }
+
+        /// <summary>
+        /// The message to be sent when a user subscribes to the channel. 
+        /// The template parameter %USER% will be replaced with the subscriber's name.
+        /// </summary>
+        string ChannelNotifySubscribemessage { get; set; }
+
+        /// <summary>
+        /// Not documented on the API
+        /// </summary>
+        bool ChannelChatHostswitch { get; set; }
+
+        /// <summary>
+        /// Indicates whether the tweet button should be shown.
+        /// </summary>
+        bool? ChannelTweetEnabled { get; set; }
+
+        /// <summary>
+        /// The message to be used when a user tweets about the channel. 
+        /// The template parameter %URL% will be replaced with the share url.
+        /// </summary>
+        string ChannelTweetBody { get; set; }
+
+        /// <summary>
+        /// Not documented on the API
+        /// </summary>
+        uint ChannelUsersLevelRestrict { get; set; }
+    }
+}
