@@ -2,6 +2,7 @@
 using MixerDotNet.Models;
 using MixerDotNet.Models.Base;
 using MixerDotNet.Models.Channels;
+using MixerDotNet.Models.Channels.Analytics;
 using MixerDotNet.Models.Users;
 using System;
 using System.Collections.Generic;

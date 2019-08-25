@@ -2,6 +2,7 @@
 using MixerDotNet.Extensions;
 using MixerDotNet.Interfaces.Channels;
 using MixerDotNet.Models.Channels;
+using MixerDotNet.Models.Channels.Analytics;
 using MixerDotNet.Models.Converters;
 using Newtonsoft.Json;
 using System;

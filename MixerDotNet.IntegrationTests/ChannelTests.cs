@@ -8,6 +8,7 @@ using MixerDotNet.Interfaces.Api;
 using MixerDotNet.Interfaces.Channels;
 using MixerDotNet.Interfaces.Users;
 using MixerDotNet.Models.Channels;
+using MixerDotNet.Models.Channels.Analytics;
 using MixerDotNet.Models.Oauth;
 using MixerDotNet.Models.Users;
 using MixerDotNet.RestApi;

@@ -1,7 +1,7 @@
 ﻿using MixerDotNet.Interfaces.Channels;
 using Newtonsoft.Json;
 
-namespace MixerDotNet.Models.Channels
+namespace MixerDotNet.Models.Channels.Analytics
 {
     public class ViewerMetricAnalytic : ChannelAnalytic, IViewerMetricAnalytic
     {

@@ -1,7 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System;
 
-namespace MixerDotNet.Models.Channels
+namespace MixerDotNet.Models.Channels.Analytics
 {
     /// <summary>
     /// A base analytics type for channel based analytical metrics.
